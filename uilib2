@@ -26,8 +26,11 @@ function library:CreateWindow(name, version, icon)
 	local Minimize = Instance.new("ImageButton")
 	local _4pxShadow2px_2 = Instance.new("ImageLabel")
 
+	ProtectInstance(MyGui)
+	ProtectInstance(Window)
+
 	MyGui.Name = RandomString
-  MyGui.Parent = cloneref(game:GetService("CoreGui"))
+	MyGui.Parent = cloneref(game:GetService("CoreGui"))
 
 	Window.Name = "Window"
 	Window.Parent = MyGui
