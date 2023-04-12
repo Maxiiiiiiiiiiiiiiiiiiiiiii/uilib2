@@ -29,7 +29,7 @@ function library:CreateWindow(name, version, icon)
 	ProtectInstance(MyGui)
 	ProtectInstance(Window)
 
-	MyGui.Name = RandomString
+	MyGui.Name = Spaceware
 	MyGui.Parent = cloneref(game:GetService("CoreGui"))
 
 	Window.Name = "Window"
