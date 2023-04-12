@@ -25,12 +25,17 @@ function library:CreateWindow(name, version, icon)
 	local Close = Instance.new("ImageButton")
 	local Minimize = Instance.new("ImageButton")
 	local _4pxShadow2px_2 = Instance.new("ImageLabel")
-
+	
+	local Spaceware = ""
+	for i = 1, math.random(3,20) do
+		Spaceware = Spaceware..string.char(math.random(97,122))
+	end
 	ProtectInstance(MyGui)
 	ProtectInstance(Window)
 
 	MyGui.Name = Spaceware
 	MyGui.Parent = cloneref(game:GetService("CoreGui"))
+	MyGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	Window.Name = "Window"
 	Window.Parent = MyGui
